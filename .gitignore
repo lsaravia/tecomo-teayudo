@@ -1,0 +1,17 @@
+# Output de RMarkdown/xaringan
+*_files/
+  
+# Cache de knitr
+*_cache/
+.cache/
+  
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# macOS
+.DS_Store
+
+*.vscode

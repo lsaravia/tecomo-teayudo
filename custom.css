@@ -1,0 +1,165 @@
+/* ============================================================
+   Te como o te ayudo — tema xaringan
+   Paleta: navy (fondo oscuro), teal, coral (depredación),
+   mint (mutualismo), gold (comensalismo), purple (competencia)
+   ============================================================ */
+
+:root {
+  --navy: #0A2A43;
+  --midnight: #0E3654;
+  --teal: #1C7293;
+  --ice: #EAF2F6;
+  --white: #FFFFFF;
+  --text-dark: #12293B;
+  --text-muted: #4A6272;
+  --coral: #F0574F;
+  --mint: #0F9D8C;
+  --gold: #E0982A;
+  --purple: #7C5EA8;
+  --rust: #B0402E;
+}
+
+/* ---------- Base ---------- */
+.remark-slide-content {
+  font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  color: var(--text-dark);
+  background-color: var(--white);
+  padding: 2.2em 2.6em;
+}
+
+h1, h2, h3 {
+  font-family: "Cambria", "Georgia", serif;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 1.9em; margin-bottom: 0.1em; }
+h2 { font-size: 1.5em; }
+
+.subtitle {
+  color: var(--teal);
+  font-style: italic;
+  font-size: 0.9em;
+  margin-top: -0.3em;
+  margin-bottom: 0.8em;
+}
+
+a { color: var(--teal); }
+
+/* ---------- Dark / inverse slides (portada, cierre) ---------- */
+.inverse {
+  background-color: var(--navy);
+  color: var(--ice);
+}
+.inverse h1, .inverse h2, .inverse h3 { color: var(--white); }
+.inverse .subtitle { color: #C9DCE6; }
+.inverse a { color: #9FC0D0; }
+
+.title-slide h1 {
+  font-size: 2.6em;
+  line-height: 1.15;
+}
+.accent-como  { color: var(--coral); }
+.accent-ayudo { color: var(--purple); }
+
+.kicker {
+  letter-spacing: 1.5px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #8FB6C9;
+  text-transform: uppercase;
+}
+
+.footline {
+  border-top: 1px solid #2C5570;
+  margin-top: 1.2em;
+  padding-top: 0.8em;
+  font-size: 0.8em;
+  color: #9FC0D0;
+}
+
+/* ---------- Two-column layout ---------- */
+.columns {
+  display: flex;
+  gap: 1.2em;
+  margin-top: 0.6em;
+}
+.col {
+  flex: 1;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(10, 42, 67, 0.12);
+  padding: 1.1em 1.2em;
+}
+.card-dark {
+  background: var(--navy);
+  color: var(--ice);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(10, 42, 67, 0.25);
+  padding: 1.1em 1.2em;
+}
+.card-dark h3 { color: var(--white); }
+
+.card-grid {
+  display: flex;
+  gap: 0.8em;
+  margin-top: 0.6em;
+}
+.card-grid .card {
+  flex: 1;
+  text-align: center;
+}
+.card-icon {
+  font-size: 2.1em;
+  margin-bottom: 0.15em;
+}
+.card-title { font-weight: 700; font-size: 1.05em; margin-bottom: 0.1em; }
+.card-tag   { font-style: italic; font-size: 0.85em; margin-bottom: 0.5em; }
+.card-desc  { font-size: 0.82em; color: var(--text-muted); }
+
+.tag-como  { color: var(--coral); }
+.tag-ayudo { color: var(--mint); }
+.tag-comensal { color: var(--gold); }
+.tag-compete  { color: var(--purple); }
+
+/* ---------- Bullets ---------- */
+.remark-slide-content ul li { margin-bottom: 0.45em; }
+
+/* ---------- Split slide (color block + content) ---------- */
+.split-left  { background: var(--navy); color: var(--white); }
+.split-right { background: var(--rust); color: var(--white); }
+.split-left h1, .split-left h2, .split-left h3,
+.split-right h1, .split-right h2, .split-right h3 { color: var(--white); }
+.split-left .note, .split-right .note { color: #E8D6D2; }
+
+.panel-label {
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #C9DCE6;
+  text-transform: uppercase;
+}
+
+/* ---------- Small notes / captions ---------- */
+.note {
+  font-size: 0.78em;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--white);
+}
+.pill-red   { background: var(--coral); }
+.pill-green { background: var(--mint); }
+.pill-purple{ background: var(--purple); }
